@@ -5,165 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thế giới thời trang</title>
     <link rel="stylesheet" href="thoitrang.css">
+    <link rel="stylesheet" href="chitietsp.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
   integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="style.css">
-  <style>
-    *{
-    font-family:  Montserrat;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.carousel-inner img {
-    width: 100%;
-    height: 100%;
-  }
-#wrapper{
-  max-width: 1170px;
-  margin:0 auto;
-}
-    .headline{
-      text-align: center;
-    }
-    h3{
-      font-size: 18px;
-      color: brown;
-      padding: 10px 20px;
-      text-transform: uppercase;
-      border: 2px solid red;
-      display: inline-block;
-
-    }
-    ul.products{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      list-style: none;
-    }
-    ul.products li{
-      flex-basis: 25%;
-      padding-left: 15px;
-      padding-right: 15px;
-      margin-bottom: 30px;
-      overflow: hidden;
-    }
-    ul.products li img{
-      max-width: 100%;
-      height: auto;
-      transition: all 0.3s ease-in-out;
-    }
-    ul.products li .product-top{
-      position: relative;
-      overflow: hidden;
-    }
-    ul.products li .product-top .product-thumb{
-      display: block;
-     
-    }
-    /*phóng ảnh khi hover chuôt*/
-    ul.products li:hover .product-top .product-thumb img{
-      transform:scale(1.1) ;
-    }
-    ul.products li .product-top .product-thumb img{
-      display: block;
-    }
-    ul.products li .product-top a.buy-now{
-        text-transform: uppercase;
-        text-decoration: none;
-        text-align: center;
-        display: block;
-        background-color: whitesmoke;
-        color: #333f48;
-        padding: 10px 0px;
-        position: absolute;
-        bottom: -45px;
-        width: 100%;
-        transition: 0.25S;
-        opacity: 0.85;
-    }
-    ul.products li :hover a.buy-now{
-      bottom: 0px;
-
-    }
-    ul.products li .product-info{
-      padding: 10px 0px;
-    }
-    ul.products li .product-info a{
-      display: block;
-      text-decoration: none;
-    }
-    ul.products li .product-info a.product-cat{
-      color: #FFC400;
-      font-size: 10px;
-      text-transform: uppercase;
-      padding: 3px 0px;
-
-    }
-    ul.products li .product-info a.product-name{
-      color: #333f48;
-      text-transform: uppercase;
-    }
-    ul.products li :hover a.product-name{
-      color: rgb(216, 3, 3);
-    }
-    .product-price{
-      font-weight: bold;
-    }
-    footer{
-      padding: 0px 20px ;
-      border-top: 1px solid #212427;
-      background-color:rgb(156, 156, 179) ;
-      position: relative;
-      padding-top: 55px;
-      width: 100%;
-    }
-    .footer_heading{
-      padding: 0px 35px;
-      color: #212427;
-    }
-    .footer-list{
-      padding-left: 30px;
-      list-style: none;
-    }
-    a.footer-item__link{
-      text-decoration: none;
-      color: #333f48;
-      font-size: 1.1rem;
-    }
-    .footer__download img{
-      padding: 0px 120px;
-      font-size: 30px;
-    }
-    .footer__download-apps img{
-        display: block;
-        font-size: 2px;
-        padding: 0px 120px;
-    }
-    .footer_heading1{
-      padding: 0px 120px;
-    }
-    .loc{
-      display: flex;
-      padding-top: 75px;
-      box-sizing: border-box;
-    }
-    .loc p{
-      padding: 0px 25px;
-      font-weight: bold;
-      font-size: 20px;
-    }
-    .filter-option{
-      padding: 0px 35px;
-      padding-top: 5px;
-      font-weight: bold;
-      box-sizing: border-box;
-    }
-
+  <style> 
     .header {
         background-color: #f8f9fa;
         padding: 20px;
@@ -171,9 +20,7 @@
     }
 
     .header-title {
-        font-size: 24px;
-        font-weight: bold;
-        color: #d61010;
+        padding: 0px 5px;
    
     }
 
@@ -200,18 +47,16 @@
         margin-right: 10px;
     }
 
-
-
   </style>
 </head> 
 <body>
   <header class="header">
     <div class="container">
-        <h1 class="header-title" >THẾ GIỚI THỜI TRANG &reg;</h1>
-        <ul class="header-menu">
-            <li><a href="#" style="text-decoration: none; color: black; ">Nam <i class="fas fa-male"></i></a></li>
-            <li><a href="#" style="text-decoration: none; color: black;">Nữ <i class="fas fa-female"></i></a></li>
-            <li><a href="#" style="text-decoration: none; color: black;">Trẻ em <i class="fas fa-child"></i></a></li>
+            <ul class="header-menu">
+         <a class="header-title" href="#"><img src="White & Black Minimalist Logo Distro Fashion (1).png" alt="logo" width="60" height="60"></a>
+            <li><a href="thoitrangnam.html" style="text-decoration: none; color: black; ">Nam <i class="fas fa-male"></i></a></li>
+            <li><a href="thoitrangnu.html" style="text-decoration: none; color: black;">Nữ <i class="fas fa-female"></i></a></li>
+            <li><a href="thoitrangtreem.html" style="text-decoration: none; color: black;">Trẻ em <i class="fas fa-child"></i></a></li>
         
         <form class="form-inline search-form">
             <div class="input-group">
@@ -220,11 +65,11 @@
             </div>
         </form>
       
-            <li><a href="#" style="text-decoration: none; color: black;">Tài khoản cá nhân <i class="fas fa-user"></i></a></li>
-            <li><a href="#" style="text-decoration: none; color: black;">Sản phẩm <i class="fas fa-tshirt"></i></a></li>
+            <li><a href="dangky.html" style="text-decoration: none; color: black;">Tài khoản cá nhân <i class="fas fa-user"></i></a></li>
+            <li><a href="thoitrangchinh.html" style="text-decoration: none; color: black;">Sản phẩm <i class="fas fa-tshirt"></i></a></li>
             <li><a href="#" style="text-decoration: none; color: black;">Đơn hàng <i class="fas fa-shopping-cart"></i></a></li>
-            <li><a href="#" style="text-decoration: none; color: black;">Thông tin shop <i class="fas fa-store"></i></a></li>
-        </ul>
+            <li><a href="thongtin.html" style="text-decoration: none; color: black;">Thông tin shop <i class="fas fa-store"></i></a></li>
+        </ul>   
     </div>
 </header>
 
@@ -252,43 +97,12 @@
       <span class="carousel-control-next-icon"></span>
     </a>
   </div>
-  <br>
-  <div id="wrapper">
-    <div class="headline">
-      <h3>DANH SÁCH BÁN CHẠY</h3>
-    </div>
-     <div class="loc">
-        <p>Bộ lọc:</p>
-        <div class="filter-option">
-          <label for="product-name">Loại</label>
-          <select id="product-name">
-            <option value="all">Tất Cả</option>
-            <option value="quần">Quần</option>
-            <option value="áo">Áo</option>
-            <option value="váy">váy</option>
-            <option value="bộ đồ">Bộ đồ</option>
-          </select>
-        </div>
-        <div class="filter-option">
-          <label for="product-price">Giá cả</label>
-          <select id="product-price">
-            <option value="all">Tất Cả</option>
-            <option value="0-200">Dưới 200.000 đ</option>
-            <option value="200-400">200.000 đ - 400.000 đ</option>
-            <option value="400-600">400.000 đ - 600.000 đ</option>
-            <option value="600+">Trên 600.000 đ</option>
-          </select>
-        </div>
-    </div>
-
     <br>
   
     <!----------product-->
     <section class="product">
         <div class="container">
-            <div class="product-top row">
-                <p>Trang chủ</p><span>&#102230; </span> <p>Nam</p> <span>&#102230; </span> <p>Quần</p> <span>&#102230; </span> <p>Quần soóc active nam</p>
-            </div>
+          <h4>CHI TIẾT SẢN PHẨM</h4>
             <div class="porduct-content row">
                 <div class="product-content-left row">
                     <div class="product-content-left-big-img">
@@ -304,20 +118,16 @@
                 <div class="product-content-right">
                     <div class="product-content-right-product-name">
                         <h1>Quần soóc active nam</h1>
-                        <p>Mã sp:8BS24S015</p>
-
-                    </div>
-                    <div class="product-content-right-product-price">
-                        <p>199.000<sup>đ</sup></p>
+                        <p>Mã sp: 8BS24S015</p>
                     </div>
                     <div class="product-content-right-product-color">
-                        <p><span style="font-weight: bold;">Màu sắc</span>:SB001 <span style="color: red;">*</span></p>
+                        <p><span style="font-weight: bold; font-size: 25px;">Màu sắc</span>:  SB001 <span style="color: red;">*</span></p>
                         <div class="product-content-right-product-color-img">
                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlgnQ1PXQN7K8ny7cRTDqDp0Cd7QxOADWaYsO1VqjDW2okUKAj" alt="">
                         </div>
                     </div>
                     <div class="product-content-right-product-size">
-                        <p style="font-weight: bold;">Size</p>
+                        <p style="font-weight: bold;font-size: 25px;">Size</p>
                         <div class="size">
                             <span>S</span>
                             <span>M</span>
@@ -328,26 +138,30 @@
                     </div>
                     <br>
                     <div class="quantity">
-                      <p style="font-weight: bold;">Số lượng</p>
+                      <p style="font-weight: bold;font-size: 20px;padding: 0px 10px;">Số lượng</p>
                       <input type="number" min="0" value="1">
                     </div>
                     <br>
+                    <div class="product-content-right-product-price">
+                      <p style="font-size: 20px;">Giá: 199.000<sup>đ</sup></p>
+                  </div>
+                    <br>
                     <div class="product-content-right-button">
-                      <button type="submit" title="Thêm vào giỏ hàng">
-                        <i class="fa-solid fa-cart-plus"></i>
-                        <p>Thêm vào giỏ hàng</p>
+                      <button type="submit" title="Thêm vào giỏ hàng" style="background-color: blanchedalmond;border: 1px solid blanchedalmond;width:190px;font-size: 18px;">
+                        <i class="fa-solid fa-cart-plus" style="color: rgb(255, 94, 0);"></i>
+                        <a href="giohang.html" style="text-decoration: none;color: red;padding: 0px 5px;">Thêm vào giỏ hàng</a>
                       </button>
-                      <button><p>Tìm tại cửa hàng</p></button>
+                      <button><p style="font-size: 20px;">Tìm tại cửa hàng</p></button>
                     </div>
-                    <div class="product-content-right-product-icon">
+                    <div class="product-content-right-product-icon" style="padding:15px;">
                       <div class="product-content-right-product-icon-item">
-                        <i class="fas fa-phone-alt"></i><p>Hotline</p>
+                        <p> <i class="fas fa-phone-alt"></i>Hotline</p>
                       </div>
                       <div class="product-content-right-product-icon-item">
-                        <i class="fas fa-comment-alt"></i><p>Chat</p>
+                        <p> <i class="fas fa-comment-alt"></i>Chat</p>
                       </div>
                       <div class="product-content-right-product-icon-item">
-                        <i class="fas fa-envelope"></i><p>Mail</p>
+                        <p><i class="fas fa-envelope"></i>Mail</p>
                       </div>
                     </div>
                     <div class="product-content-right-bottom">
@@ -357,17 +171,14 @@
                         <div class="product-content-right-bottom-content-big">
                           <div class="product-content-right-bottom-content-title row">
                             <div class="product-content-right-bottom-content-title-item mota">
-                                <p>Mô tả</p>
+                                <p style="font-size: 20px;font-weight: bold;padding: 0px 15px;">Mô tả</p>
                             </div>
                             <div class="product-content-right-bottom-content-title-item chatlieu">
-                                <p>Chất liệu</p>
+                                <p  style="font-size: 20px;font-weight: bold;" >Chất liệu</p>
                             </div>
                           </div>
-                          <div class="product-content-right-bottom-content-mota">
-                            Áo ba lỗ chất liệu polyester co giãn, cổ tròn, phom regular.
-Tính năng: Wicking
-                          </div>
-                          <div class="product-content-right-bottom-content-chatlieu">
+                          <div class="product-content-right-bottom-content-mota" style="border: 1px solid rgb(199, 195, 194);">
+                            Áo ba lỗ chất liệu polyester co giãn, cổ tròn, phom regular.Tính năng: Wicking
                             90% polyester 10% spandex.
                           </div>
                         </div> 
@@ -380,28 +191,28 @@ Tính năng: Wicking
     </section>
     <section class="product-related">
       <div class="product-related-title">
-        <p>SẢN PHẨM LIÊN QUAN</p>
+        <p style="font-size: 20px;font-weight: bold; text-align: center;padding-top: 25px;">SẢN PHẨM LIÊN QUAN</p>
       </div>
       <div class=" row product-content">
         <div class="product-related-item">
-          <img src="https://canifa.com/img/212/284/resize/8/b/8bs22s014-se129-xl-1.webp" alt="">
+          <a href="chitiietsp.html" style="text-decoration: none;"><img src="https://canifa.com/img/212/284/resize/8/b/8bs22s014-se129-xl-1.webp" alt="">
           <h1>Quần soóc nam cạp chun có túi</h1>
-          <p>214.500<sup>đ</sup></p>
+          <p>214.500<sup>đ</sup></p></a>
         </div>
         <div class="product-related-item">
-          <img src="https://canifa.com/img/212/284/resize/8/b/8bs22s020-sj729-31-1-u.webp" alt="">
+          <a href="chitiietsp.html" style="text-decoration: none;"><img src="https://canifa.com/img/212/284/resize/8/b/8bs22s020-sj729-31-1-u.webp" alt="">
           <h1>Quần soóc jeans nam cotton</h1>
-          <p>249.500<sup>đ</sup></p>
+          <p>249.500<sup>đ</sup></p></a>
         </div>
         <div class="product-related-item">
-          <img src="https://canifa.com/img/212/284/resize/8/b/8bs22w001-sn235-xl-1.webp" alt="">
+          <a href="chitiietsp.html" style="text-decoration: none;"><img src="https://canifa.com/img/212/284/resize/8/b/8bs22w001-sn235-xl-1.webp" alt="">
           <h1>Quần soóc nam cạp chun luồn dây dệt túi chéo dáng suông</h1>
-          <p>214.500<sup>đ</sup></p>
+          <p>214.500<sup>đ</sup></p></a>
         </div>
         <div class="product-related-item">
-          <img src="https://canifa.com/img/212/284/resize/8/b/8bs22s015-se002-xl-1.webp" alt="">
+          <a href="chitiietsp.html" style="text-decoration: none;"><img src="https://canifa.com/img/212/284/resize/8/b/8bs22s015-se002-xl-1.webp" alt="">
           <h1>Quần soóc nam cạp chun có túi hai bên</h1>
-          <p>214.500<sup>đ</sup></p>
+          <p>214.500<sup>đ</sup></p></a>
         </div>
       </div>
     </section>
@@ -452,17 +263,19 @@ Tính năng: Wicking
           </li>
         </div>
         <div class="grid_column-2-4">
-          <p class="footer_heading1">TẢI ỨNG DỤNG</p>
+          <p class="footer_heading1" style="font-size: 20px;">TẢI ỨNG DỤNG</p>
           <div class="footer__download">
             <img src="https://canifa.com/assets/images/bancode.png" alt="QR">
-            <div class="footer__download-apps">
-              <img src="https://canifa.com/assets/images/googleplay.png" alt="chplay" class="footer__download-apps ">
-              <img src="https://canifa.com/assets/images/appstore.png" alt="appstore" class="footer__download-apps">
+            <div class="footer__download-apps" style="padding:5%; ">
+              <img src="https://canifa.com/assets/images/googleplay.png" alt="chplay" class="footer__download-apps " style="padding:5px; padding-left: 100px;">
+              <img src="https://canifa.com/assets/images/appstore.png" alt="appstore" class="footer__download-apps" style="padding:5px; padding-left: 100px;">
             </div>
           </div>
         </div>
       </div>
-    </div>  
+    </div> 
+ <hr>
+ <p style="font-weight: bold;text-align: center;">&copy; 2024 VIETVULOC</p>
   </footer>
   <script src="thoitrang.js"></script>
 </div>
